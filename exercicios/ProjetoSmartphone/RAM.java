@@ -1,26 +1,32 @@
+package exlonge;
 
-public class RAM {
-	
+public class Ram {
 	private String tipo;
-	private double capacidade;
-	
-	public String getTipo() {
-		return tipo;
-	}
-	
-	public double getCapacidade() {
-		return capacidade;
-	}
-	
-	public RAM(String tipo, double capacidade) {
+	private int capacidade;
+
+	public Ram(String tipo, int capacidade) {
 		this.tipo = tipo;
 		this.capacidade = capacidade;
 	}
-	
-	public void imprimirDados() {
-		System.out.println("Tipo da memória RAM: " + getTipo());
-		System.out.println("Capacidade da memória RAM: " + getCapacidade() + "Gb");
+
+	public Ram() {
+
 	}
-	
-	
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public int getCapacidade() {
+		return capacidade;
+	}
+
+	public void setCapacidade(int capacidade) {
+		this.capacidade = capacidade;
+	}
+
 }

@@ -1,18 +1,22 @@
+package exlonge;
 
 public class Camera {
-	
-	private double resolucao;
+	private String resolucao;
 
-	public double getResolucao() {
-		return resolucao;
-	}
-
-	public Camera(double resolucao) {
+	public Camera(String resolucao) {
 		this.resolucao = resolucao;
 	}
 	
-	public void imprimirDados() {
-		System.out.println("Resolução da câmera: " + getResolucao() + "MP");
+	public Camera() {
+
+	}
+
+	public String getResolucao() {
+		return resolucao;
+	}
+
+	public void setResolucao(String resolucao) {
+		this.resolucao = resolucao;
 	}
 
 }

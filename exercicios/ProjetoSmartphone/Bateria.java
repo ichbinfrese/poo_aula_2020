@@ -1,18 +1,21 @@
+package exlonge;
 
-public class Bateria  {
+public class Bateria {
+	private float capacidade;
 
-	private double capacidade;
-
-	public double getCapacidade() {
-		return capacidade;
-	}
-
-		public Bateria(double capacidade) {
+	public Bateria(float capacidade) {
 		this.capacidade = capacidade;
 	}
 
-	public void imprimirDados() {
-		System.out.println("Capacidade da bateria: " + getCapacidade() + "mAh");
+	public Bateria() {
 	}
-	
+
+	public float getCapacidade() {
+		return capacidade;
+	}
+
+	public void setCapacidade(float capacidade) {
+		this.capacidade = capacidade;
+	}
+
 }
