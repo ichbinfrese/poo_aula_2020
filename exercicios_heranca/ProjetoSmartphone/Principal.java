@@ -1,6 +1,10 @@
-package exlonge;
+package ProjetoSmartphone;
 
-public class Main {
+//import RAM;
+
+import polimorfismo.pecas.*;
+
+public class Principal {
 
 	public static void main(String[] args) {
 

@@ -1,4 +1,3 @@
-package exlonge;
 
 public class Ram {
 	private String tipo;

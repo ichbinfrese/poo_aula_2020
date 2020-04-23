@@ -1,4 +1,6 @@
-package exlonge;
+package exercicios_heranca.ProjetoSmartphone;
+
+import polimorfismo.pecas.*;
 
 public class Smartphone {
 
@@ -15,7 +17,7 @@ public class Smartphone {
 	}
 
 	public Smartphone(String nome, Ram objRam, Processador objProcessador, Tela tela, Bateria objBateria,
-			Camera objCamera) {
+					  Camera objCamera) {
 		super();
 		this.nome = nome;
 		this.objRam = objRam;
@@ -41,7 +43,7 @@ public class Smartphone {
 		this.objRam = objRam;
 	}
 
-	public Processador getObjProcessador() {
+	public  Processador getObjProcessador() {
 		return objProcessador;
 	}
 

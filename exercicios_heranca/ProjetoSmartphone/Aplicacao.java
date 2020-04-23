@@ -1,11 +1,14 @@
+package ProjetoSmartphone;
+
+import polimorfismo.pecas.*;
 
 public class Aplicacao {
 
 	public static void main(String[] args) {
-		
+		/*
 		Smartphone s1 = new Smartphone("Samsung S10");
 		Tela t1 = new Tela(6.1, "3040x1440");
-		RAM r1 = new RAM("DDR3",6);
+		Ram r1 = new Ram("DDR3",6);
 		Processador p1 = new Processador("Samsung","Exynos 9820", 2.7);
 		Bateria b1 = new Bateria(3400);
 		Camera c1 = new Camera(10);
@@ -30,7 +33,7 @@ public class Aplicacao {
 		p2.imprimirDados();
 		b2.imprimirDados();
 		c2.imprimirDados();
-		
+		*/
 
 	}
 

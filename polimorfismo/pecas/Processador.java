@@ -1,4 +1,4 @@
-package exlonge;
+package polimorfismo.pecas;
 
 public class Processador {
 	private String marca;
