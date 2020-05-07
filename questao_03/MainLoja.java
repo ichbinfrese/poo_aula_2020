@@ -1,5 +1,7 @@
 package questao_03;
 
+import java.util.Scanner;
+
 /*
 Crie uma hierarquia de herança com 3 níveis:
 Pessoa, Funcionário e (Vendedor + Gerente)
@@ -11,6 +13,69 @@ Pessoa, Funcionário e (Vendedor + Gerente)
  */
 public class MainLoja {
     public static void main(String[] args) {
+
+        Scanner leitor = new Scanner(System.in);
+
+        Gerente[] objG01 = new Gerente[2];
+        Vendedor[] objV01 = new Vendedor[2];
+
+        System.out.println("Informe dois Gerentes");
+        for (int i = 0; i < objG01.length; i++) {
+            System.out.println("Informe Tipo do Gerente " + i);
+            objG01[i] = new Gerente(leitor.next());
+
+            System.out.println("Informe Nome do Gerente" + i);
+            objG01[i].setNome(leitor.next());
+
+            System.out.println("Informe Setor do Gerente "  + i);
+            objG01[i].setSetor(leitor.next());
+
+            objG01[i].setNomeCargo("Gerente " + objG01[i].getTipo()  + i);
+        }
+
+        System.out.println("Informe dois Vendedores");
+        for (int i = 0; i < objV01.length; i++) {
+            objV01[i] = new Vendedor();
+            System.out.println("Informe nome Vendedor"  + i);
+            objV01[i].setNome(leitor.next());
+            System.out.println("Informe idade Vendendor"  + i);
+            objV01[i].setIdade(leitor.nextInt());
+            System.out.println("Informe Setor Vendendor"  + i);
+            objV01[i].setSetor(leitor.next());
+            System.out.println("Informe Cargo Vendendor"  + i);
+            objV01[i].setNomeCargo(leitor.next());
+            double valorVendaMesV01 = (1200 * 0.05) * 25;
+            objV01[i].setSalario(valorVendaMesV01);
+            objV01[i].setGerente(objG01[i]);
+        }
+
+        for (int i = 0; i < objV01.length; i++) {
+            System.out.println("#### Vendedores " + i + " #### ");
+            System.out.println("Nome: " + objV01[i].getNome() + " Setor: " + objV01[i].getSetor());
+            System.out.println("Cargo: " + objV01[i].getNomeCargo());
+            System.out.println("Salario: " + objV01[i].getSalario());
+        }
+
+        for (int i = 0; i < objG01.length; i++) {
+            System.out.println("#### Gerente " + i + " #### ");
+            System.out.println("Nome: " + objG01[i].getNome() + " Setor: " + objG01[i].getSetor());
+            System.out.println("Cargo: " + objG01[i].getNomeCargo());
+            System.out.println("Salario: " + objG01[i].getSalario());
+        }
+
+  /*
+                for (int i = 0; i < objC01.length; i++) {
+                    System.out.println("#### Cliente " + i + " #### ");
+                    System.out.println("Nome: " + objC01[i].getNome());
+                    System.out.println("CPF: " + objC01[i].getCpf());
+                    System.out.println("Idade: " + objC01[i].getIdade());
+                    System.out.println("Telefone: " + objC01[i].getTelefone());
+
+                }
+
+   */
+
+
 /*
         Pessoa objP01 = new Pessoa();
         objP01.setNome("Joao");
@@ -26,7 +91,6 @@ public class MainLoja {
 
         System.out.println("Nome: " + objFunc01.getNome());
         System.out.println("Cargo: " + objFunc01.getNomeCargo());
-*/
 
         Gerente objGer01 = new Gerente("Comercial");
         objGer01.setNome("Marcos");
@@ -70,7 +134,6 @@ public class MainLoja {
         System.out.println("Nome: " + objGer01.getNome() + " Setor: " + objGer01.getSetor());
         System.out.println("Cargo: " + objGer01.getNomeCargo());
         System.out.println("Salario: " + objGer01.getSalario());
-
-
+*/
     }
 }

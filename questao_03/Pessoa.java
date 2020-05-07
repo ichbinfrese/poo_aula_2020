@@ -49,4 +49,8 @@ public class Pessoa {
         this.idade = idade;
     }
 
+    public String imprimirDados() {
+        return this.getNome() + " " + this.getTelefone() + " " + this.getIdade() + " " + this.getCpf();
+    }
+
 }

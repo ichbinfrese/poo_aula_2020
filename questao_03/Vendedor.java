@@ -41,4 +41,8 @@ public class Vendedor extends Funcionario {
         this.gerente = gerente;
     }
 
+    public String imprimirDados() {
+        return super.imprimirDados() + " " +
+                this.getTipo() + " " + this.getGerente().getNome() + this.getQtd_venda();
+    }
 }
